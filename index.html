@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+      /* test source control */
+      /* 將畫面分成左右兩半 */
+      .split {
+        height: 100%;
+        width: 70%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      /* 左半邊 */
+      .left {
+        left: 0;
+        background-color: #fff;
+      }
+
+      /* 右半邊 */
+      .right {
+        right: 0;
+        background-color: #f2f2f2;
+      }
+
+      /* 畫直線 */
+      .vertical-line {
+        border-left: 6px solid #333;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        margin-left: -3px;
+        z-index: 1;
+      }
+
+      /* 調整內容的位置 */
+      .content {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      iframe {
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="content">
+        左半邊
+      </div>
+    </div>
+    <div class="split right">
+      <div class="content">
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTs5_5AJ5tY3gNgEFyCa93-1EZFEBaM-y0zeV6rskKGLpY_m07x1mr1b5yCkJvdDsOcdHxE8iQr7mxU/pub?embedded=true">
+        </iframe>
+        
+      </div>
+    </div>
+    <div class="vertical-line"></div>
+
+  </body>
+</html>
