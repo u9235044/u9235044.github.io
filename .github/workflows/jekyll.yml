@@ -40,9 +40,9 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: print ruby version
-        with: ruby -v
+        run: ruby -v
       - name: print bundler version
-        with: bundler -v
+        run: bundler -v
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
